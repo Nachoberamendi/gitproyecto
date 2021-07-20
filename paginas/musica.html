@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@100&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <!-- Navbar-->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="agrandarLogo" src="../imagenes/Logo_sanimacion.png" alt="" width="30" height="24">
+                </a>
+                <h1 class="d-none d-sm-block">
+                    Solo Rap
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul
+                        class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row flex-nowrap justify-content-evenly align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active agrandarItemMenu" aria-current="page"
+                                href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link agrandarItemMenu" href="musica.html">Musica</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link agrandarItemMenu" href="fms.html">FMS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link agrandarItemMenu" href="bases.html">Bases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link agrandarItemMenu" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--    Sacar clase agregada para ejercicio de BEM (/fondo--musica/titulo__musica/parrafo__artistas)-->
+    <section class="fondo--musica">
+        <div class="container d-flex justify-content-center align-items-center">
+            <h3 class=" wow animate__animated animate__flipInX pt-3 titulo__musica">Artistas</h3>
+        </div>
+        <p class="parrafo__artistas m-3 fs-6">Les mostramos los nombres de algunos temas de los mejores artistas de Rap
+            sudamericanos. Haga click en la foto para acceder a su discografia.</p>
+        <div id="imagenesMusica" class="d-none d-lg-flex flex-lg-row justify-content-lg-evenly">
+            <div class="columIzqMusica">
+                <div class="listaWos">
+                    <a
+                        href="https://open.spotify.com/artist/5YCc6xS5Gpj3EkaYGdjyNK?si=a8ReV_pMTBuL9eLGzb82gA&dl_branch=1"><img
+                            class="imagenes" src="../imagenes/wos.jpg" alt="wos"></a>
+                    <ul class="text-center">
+                        <li class="negrita">Canciones</li>
+                        <li>Purpura</li>
+                        <li>Ojeras negras</li>
+                        <li>Andrómeda</li>
+                        <li>Pantano</li>
+                        <li>Okupa</li>
+                    </ul>
+                </div>
+                <div class="listaAcru"> <a
+                        href="https://open.spotify.com/artist/0bYQe0JDIjxkSHQoXlfngl?si=2onPHdRyQ3yaUNDlWwQoog&dl_branch=1"><img
+                            class="imagenes" src="../imagenes/acru4.jpg" alt="acru"></a>
+                    <ul class="text-center">
+                        <li class="negrita">Canciones</li>
+                        <li>Estuve ahi</li>
+                        <li>Delirio</li>
+                        <li>Monoblock</li>
+                        <li>Roman</li>
+                        <li>Dharma</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columCenMusica">
+                <div class="listaNach">
+                    <a
+                        href="https://open.spotify.com/artist/66ArjpKRgw8vYBf9yhktto?si=SyELgNGpRkCOYPrLXi8V4w&dl_branch=1"><img
+                            class="imagenes" src="../imagenes/nach.jpg" alt="nach"></a>
+                    <ul class="text-center">
+                        <li class="negrita">Canciones</li>
+                        <li>Rap Bruto</li>
+                        <li>Efectos vocales</li>
+                        <li>Ellas</li>
+                        <li>Todo o nada</li>
+                        <li>Tal como eres</li>
+                    </ul>
+                </div>
+                <div class="listaCan">
+                    <a
+                        href="https://open.spotify.com/artist/1wGIhYkKWSq4yACtTkCkSX?si=KOuqDVjoQcORRAGwrYCLVg&dl_branch=1"><img
+                            class="imagenes" src="../imagenes/can.jpg" alt="canserbero"></a>
+                    <ul class="text-center">
+                        <li class="negrita">Canciones</li>
+                        <li>Jeremias 17-5</li>
+                        <li>Macquiabelico</li>
+                        <li>Es epico</li>
+                        <li>Interludio</li>
+                        <li>Llovia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columDerMusica">
+                <div class="listaBrapis">
+                    <a
+                        href="https://open.spotify.com/artist/5dRBlNLqt3CWQ5uFsZQr3L?si=C4lnFlgmSsOnxtmKUab1aQ&dl_branch=1"><img
+                            class="imagenes" src="../imagenes/brapis2.jpg" alt="brapis"></a>
+                    <ul class="text-center">
+                        <li class="negrita">Canciones</li>
+                        <li>Perfume</li>
+                        <li>Legado</li>
+                        <li>Slang</li>
+                        <li>Smokers</li>
+                        <li>1312</li>
+                    </ul>
+                </div>
+                <div class="listaRene">
+                    <a
+                        href="https://open.spotify.com/artist/5GcWBUX00IPuWVGMIRK1sS?si=DTG0tmsBSJqa9vxJX9yFHA&dl_branch=1"><img
+                            class="imagenes" src="../imagenes/residente.jpg" alt="rene"></a>
+                    <ul class="text-center">
+                        <li class="negrita">Canciones</li>
+                        <li>Rene</li>
+                        <li>Desencuentro</li>
+                        <li>Pecador</li>
+                        <li>La catedra</li>
+                        <li>Hoy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- section carrousel -->
+
+        <div class="container col-12 sizeCarrousel pb-4 d-lg-none">
+            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a
+                            href="https://open.spotify.com/artist/0bYQe0JDIjxkSHQoXlfngl?si=2onPHdRyQ3yaUNDlWwQoog&dl_branch=1"><img
+                                src="../imagenes/acru3.jpg" class="d-block w-100" alt="acru"></a>
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Acru</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a
+                            href="https://open.spotify.com/artist/5GcWBUX00IPuWVGMIRK1sS?si=DTG0tmsBSJqa9vxJX9yFHA&dl_branch=1"><img
+                                src="../imagenes/wos3.jpg" class="d-block w-100" alt="wos"></a>
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Wos</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a
+                            href="https://open.spotify.com/artist/5dRBlNLqt3CWQ5uFsZQr3L?si=C4lnFlgmSsOnxtmKUab1aQ&dl_branch=1"><img
+                                src="../imagenes/brapis.jpg" class="d-block w-100" alt="brapis"></a>
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Brapis</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a
+                            href="https://open.spotify.com/artist/1wGIhYkKWSq4yACtTkCkSX?si=KOuqDVjoQcORRAGwrYCLVg&dl_branch=1"><img
+                                src="../imagenes/canserbero.jpg" class="d-block w-100" alt="can"></a>
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Canserbero</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a
+                            href="https://open.spotify.com/artist/66ArjpKRgw8vYBf9yhktto?si=SyELgNGpRkCOYPrLXi8V4w&dl_branch=1"><img
+                                src="../imagenes/nachh.jpg" class="d-block w-100" alt="nach"></a>
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Nach</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagenes/resi.jpg" class="d-block w-100" alt="resi">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Residente</h5>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <footer
+        class=" container-fluid pb-2 d-flex flex-row flex-wrap justify-content-center align-items-center flex-sm-column">
+        <div class="d-none d-sm-block">
+            <p class="ft pt-2 px-2 text-center fs-6">Sitio desarrollado por Ignacio Beramendi. © Todos los derechos
+                reservados</p>
+        </div>
+        <div class="logo--redes">
+            <a href="https://www.facebook.com/nacho.beramendi/" target="_blank"><img class="tamano__img"
+                    src="../logos_redes/facebook.png" alt="Facebook"></a>
+            <a href="https://open.spotify.com/user/z6bce7ccco20eway3rwqx5w5n" target="_blank"><img class="tamano__img"
+                    src="../logos_redes/spotify.png" alt="Spotify"></a>
+            <a href="https://www.youtube.com"><img class="tamano__img" src="../logos_redes/youtube.png"
+                    alt="youtube"></a>
+            <a href="https://www.twitter.com"><img class="tamano__img" src="../logos_redes/gorjeo.png"
+                    alt="twitter"></a>
+            <a href="https://www.instagram.com/beramendinacho/?hl=es-la"><img class="tamano__img"
+                    src="../logos_redes/instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

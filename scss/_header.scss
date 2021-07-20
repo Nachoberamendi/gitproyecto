@@ -1,0 +1,32 @@
+header{
+    background: $bgHeader;
+    grid-area: header;
+    border{
+        top: solid 2x  #BF1363;
+        bottom: solid 2x #BF1363;
+    }
+    z-index: 1;
+    h1 {
+        font-family: $robotoTitulo;
+        font-weight: 900;
+        font-size: 3em;
+        color: #c84b31;
+        }
+    .agrandarLogo {
+        width:  90px;
+        height: 90px; 
+        margin-left: 15% ;
+        border: 1px solid rgb(70, 3, 3);
+                }   
+
+}
+        div { 
+            ul {
+                .agrandarItemMenu{
+                    &:hover {
+                        transform: scale(1.4);
+                        transition: all 300ms ;
+                            }
+                                }   
+              } 
+            }

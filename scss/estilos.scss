@@ -1,0 +1,350 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+
+@for $a from 1 through 5{
+    .padding-#{$a}{
+        padding: (1.5px * 2)*$a;
+    }
+}
+
+/* Contenido (main) de las paginas*/
+
+.section1Index {
+   background-color: $bgsectionIndex;
+}
+#h2Index {
+    font-size: $tamanoFuente*2;
+    font-family: $robotoTitulo;
+    font-weight:bold;
+    letter-spacing: 1px;
+    color:darkgoldenrod;
+}
+#mic {
+    width: 300px;
+    height: 200px;
+    border:darkred 3px solid;
+}
+.tituloArticleIndex {
+        font-size:$tamanoFuente*1.5 ;
+        font-family:$robotoTitulo;
+        font-weight: bold;
+        color:burlywood;
+}
+article {
+    font-family: $notoTextos ;
+    color: black;
+    line-height: 1.5em;
+    font-size: .8em;
+}
+#asideIndex {
+    background: $bgasideIndex ;
+    h3{
+        color: green ;
+        font-family: $robotoTitulo;
+        font-size: 1.8rem;
+        font-weight: bold ;
+    }
+}
+.tamanoVideo__index {
+    width: 15rem;
+    padding-top: 1rem ;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.foro {
+    font-size: 1.2rem;
+    font-family: $robotoTitulo;
+    font-weight: 600;
+    color: midnightblue;
+    line-height: 1.2em;
+    text-transform: capitalize;
+}
+.achicarTextarea {
+    width: 250px;
+    height: 350px;
+}
+
+@media screen and (min-width: 1000px) {
+    .tamanoVideo__index {
+        width: 16rem;
+        padding-top: 1rem ;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (min-width: 1100px) { 
+    #mic {
+        width: 350px;
+        height: 250px;
+        }
+     article {
+        line-height: 2em;
+     }   
+}
+
+/* mobile first- BS - Musica*/
+
+.fondo--musica {
+   background: $bgfondoMusica;
+   min-height: 55vh;
+    div{ 
+        .titulo__musica {
+            font-family: $robotoTitulo;
+            font-weight: bold;
+            font-size: 1.5em;
+            color:maroon;
+            letter-spacing: 1.5px;
+            animation-name: titulos_musica;
+            animation-iteration-count:infinite ;
+            animation-timing-function:ease-in ;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            width: auto;
+                        }
+    }
+    .parrafo__artistas {
+        font-family: $notoTextos;
+        font-size: .8em;
+        color:black ;
+        font-weight: normal;
+    }     
+}
+.sizeCarrousel {
+    width: 300px;
+    margin: 0 auto;
+}
+a {
+    .imagenes {
+        width: 300px; 
+        height: 200px;
+        border: teal 4px solid;
+        opacity: 0.5;
+        &:hover{
+            transform: scale(1.05);
+            transition: all 200ms;
+            border:rgb(70, 3, 3) solid 4px;
+            opacity: 1;
+        }
+    }
+} 
+ul {
+    list-style: none;
+    .negrita{
+        font-weight: bold;
+        color: brown;
+    }
+} 
+
+               /*CONTACTOS*/
+
+.fondo--contacto {
+    background-image: url(../imagenes/paisaje2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    border: 1px solid rgb(27, 89, 146);
+    .titulo__contacto {   
+        font-family: $robotoTitulo; 
+        color: darkblue;
+        font-weight: normal;
+        word-spacing: 0.2em;
+        }
+    div {
+        .parrafo__contacto {
+            font-family: $notoTextos;
+            color: black;
+            text-align:justify;
+            line-height: 20px;
+            word-spacing: .5rem;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+          }     
+       }
+}
+#fondoForm { 
+   background-color: $bgformulario;
+}
+form {
+    max-width: 500px;
+}
+
+@media screen and (min-width: 450px) {
+    .sizeCarrousel {
+     width: 450px;
+                    }
+  }
+@media screen and (min-width: 750px) {
+    .sizeCarrousel {
+     width: 800px;
+                    }
+  }
+
+            /* BASES */ 
+
+.grillaBases {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+            "header header header"
+            "section section aside"
+            "section section aside"
+            "footer footer footer" ;
+    gap: 10px ;
+            }
+#section1Bases {
+                background: $bgSection1Bases;
+                grid-area: section;
+                
+              }
+.section--arriba {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    align-items: center;
+    .__animacion {
+        color: #c84b31;
+        font-family: $robotoTitulo;
+        font-weight: bolder;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        margin: auto;
+        width: 200px;
+        animation-name: animacion;
+        animation-iteration-count:infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+        animation-delay: 2s;
+                }
+                @keyframes animacion {
+                    0%{ width: 200px; }
+                    50%{ width: 300px;
+                      color: red; }
+                    100%{ width: 200px;
+                      color:green;}
+                }
+div {
+    .titulo--bases {
+        font-size: 1.2em;
+        font-family: $robotoTitulo;
+        font-weight: 800;
+        color:darkgoldenrod ;
+        text-align: center;
+                    }
+}
+
+}
+#asideBases {
+    background-color: $bgasideBases;
+}
+aside {
+    grid-area: aside;
+    padding-top: 10%;
+    .__foro {
+        font-family:Arial, Helvetica, sans-serif;
+        color: midnightblue;
+        line-height: 1.4em;
+        text-transform: capitalize;
+         }
+    .tamano__textarea {
+        height: 70%;
+        resize: none;
+                    }
+}  
+@media only screen and (min-width:1200px) { 
+    .videos__bases {
+        width: 350px;
+        height: 230px;
+                    }
+}
+
+            /*FMS*/
+.fondo1--fms {
+    background: $bg1Fms;
+    .section__arriba{
+                    .titulo__fms {
+                        color:darkslateblue;
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        font-family: $robotoTitulo;
+                                }
+                }
+    
+    .parrafo__fms {
+        font-family: $notoTextos ;
+        font-size: .8em;
+        text-align: justify;
+        word-spacing: 1px;
+        padding-bottom: 1%;
+                }
+            }
+
+    .separacion__pais {
+        margin-left: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+                    }
+            
+#nacionalidad {
+    font-size: 18px;
+    font-family: $robotoTitulo;
+    font-weight: 900;
+    margin-right: 15px;
+    margin-left: 10px;
+             }
+
+#fondo2Fms {
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: tan;
+}
+
+.tituloVideosFms {
+    font-family: $robotoTitulo;
+    font-weight: 800;
+    text-align: center;
+    color:#c84b31 ;
+}
+#imagenesFmsIzq img , #imagenesFmsDer img { 
+    width: 200px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: tomato;
+}
+#imagenesFmsIzq img {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+#imagenesFmsDer img {
+    margin-top: 5px;
+    margin-bottom: 4px;
+    margin-right: auto;
+}
+@media only screen and (min-width:990px) { 
+    .achicarVideosFms {
+        width: 220px;
+        height: 200px;
+    }
+}     
+@media only screen and (min-width:1200px) { 
+    .achicarVideosFms {
+        width: 280px;
+        height: 200px;
+    }
+    #imagenesFmsIzq img , #imagenesFmsDer img { 
+        width: 280px;
+    }
+}           
+ 
+
+
+
